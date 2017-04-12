@@ -484,8 +484,8 @@ footer{
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	color: #fff;
-	background-color: #414a4f;
+	color: #ccc;
+	background-color: #fff;
 	padding: 60px 0;
 }
 
@@ -512,6 +512,7 @@ footer p{
 	font-size: 14px;
 	color: rgba(255,255,255,0.6);
 	margin-bottom: 10px;
+	color: #ccc;
 }
 
 footer p a{
