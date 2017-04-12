@@ -34,9 +34,9 @@ export default class Home extends Component {
             <h3 className='title'>My Background</h3>
             <p>I am a front-end or full-stack web and mobile app developer with 18 total years of experience. I am also a family man and devoted husband of 17 years, small business owner and blue belt in Brazilian JiuJitsu.</p>
             <p>I am very detail oriented. You can easily contact me at any hour of the day. I work very, very hard. I know how to deliver on time and on budget. I have business savvy. I work well with remote teams.</p>
-            <p>Over my 18 year career I have built quite a few web apps including an online air/car/hotel travel system, a real estate MLS app, assisted with a large oil/gas ERP system for a software company, was the lead developer on another large ERP for an oil/gas services company, helped build a college testing platform, and recently I was the lead developer on a complex lead tracking CRM/ERP, etc.</p>
+            <p>Over my 18 year career I have built quite a few web apps including an online air/car/hotel travel system, a real estate MLS app, assisted with a large oil/gas ERP system for a software company, was the lead developer on another large ERP for an oil/gas services company, helped build a college testing platform, and recently I was the lead developer on a complex lead tracking CRM/ERP web application, etc.</p>
             <p>I am currently working on two React-Native mobile apps for different clients. The first app is an oil/gas safety auditing tool. Photos taken within the app are uploaded to Amazon S3. The second app is a social crowdfunded donations app for charities.</p>
-            <p>I also have experience with normal react, redux, meteor, firebase, node, php, rails, backbone, c# .net, etc. I look forward to learning more about your project.</p>
+            <p>I also have experience with normal react, redux, meteor, firebase, node, php, rails, backbone, c# .net, etc.</p>
             <p>I look forward to hearing more about your project. Thank you for your time.</p>
           </Section>
         </ScrollableAnchor>
