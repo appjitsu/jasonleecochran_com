@@ -113,7 +113,7 @@ ul.grid{
 -------------*/
 
 header{
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: 10;
@@ -122,7 +122,8 @@ header{
 	justify-content: space-between;
 	align-items: center;
 	color: #fff;
-	padding: 35px 100px 0;
+	padding: 20px 100px 20px;
+	background-color: rgba(0,0,0,0.8);
 }
 
 header h2{
@@ -164,6 +165,13 @@ header nav li:last-child{
 	}
 }
 
+/*-------------
+ 	Page
+-------------*/
+
+.page {
+	overflow-y: auto;
+}
 
 
 /*----------------

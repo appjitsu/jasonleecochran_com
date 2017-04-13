@@ -3,7 +3,7 @@ import Footer from './footer';
 
 const Page = ({ children }) => {
   return (
-    <div>
+    <div className='page'>
   		{ children }
       <Footer />
     </div>
