@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app) and hosted on [Surge.sh](http://surge.sh).
 
 [DEMO](http://jasonleecochran.com)
 
