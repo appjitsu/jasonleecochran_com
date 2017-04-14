@@ -4216,7 +4216,7 @@ react-dev-utils@^0.5.2:
     sockjs-client "1.0.1"
     strip-ansi "3.0.1"
 
-react-dom@^15.1.0:
+react-dom@^15.5.4:
   version "15.5.4"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-15.5.4.tgz#ba0c28786fd52ed7e4f2135fe0288d462aef93da"
   dependencies:
@@ -4224,13 +4224,6 @@ react-dom@^15.1.0:
     loose-envify "^1.1.0"
     object-assign "^4.1.0"
     prop-types "~15.5.7"
-
-react-responsive-image@^3.3.5:
-  version "3.3.5"
-  resolved "https://registry.yarnpkg.com/react-responsive-image/-/react-responsive-image-3.3.5.tgz#37fdccd0ce1780a124ac1f17b9be86319e6e680c"
-  dependencies:
-    react "^15.1.0"
-    react-dom "^15.1.0"
 
 react-router@^3.0.0:
   version "3.0.5"
@@ -4295,7 +4288,7 @@ react-scrollable-anchor@^0.4.2:
   dependencies:
     jump.js "1.0.1"
 
-react@>=0.14.0, react@^15.1.0, react@^15.5.4:
+react@>=0.14.0, react@^15.5.4:
   version "15.5.4"
   resolved "https://registry.yarnpkg.com/react/-/react-15.5.4.tgz#fa83eb01506ab237cdc1c8c3b1cea8de012bf047"
   dependencies:
