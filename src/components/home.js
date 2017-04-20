@@ -15,8 +15,8 @@ export default class Home extends Component {
         <Page>
           <ScrollableAnchor id={'top'}>
             <Section styles='hero'>
-              <div className='background-image' style={{backgroundImage: `url(${process.env.PUBLIC_URL}/img/river.jpg)`}}></div>
-              <div><Avatar src={`${process.env.PUBLIC_URL}/img/jason.jpg`} size={200} round={true} /></div>
+              <div className='background-image' style={{backgroundImage: `url(${process.env.PUBLIC_URL}/img/endor.png)`}}></div>
+              <div><Avatar src={`${process.env.PUBLIC_URL}/img/sexybacca.jpg`} size={200} round={true} /></div>
               <h1>Jason Cochran</h1>
               <h3>18 Year Veteran Web/Mobile Apps Developer</h3>
               <div style={{ marginBottom: '30px' }}>
