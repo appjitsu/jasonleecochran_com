@@ -15,10 +15,11 @@ export default class Home extends Component {
         <Page>
           <ScrollableAnchor id={'top'}>
             <Section styles='hero'>
-              <div className='background-image' style={{backgroundImage: `url(${process.env.PUBLIC_URL}/img/endor.png)`}}></div>
-              <div><Avatar src={`${process.env.PUBLIC_URL}/img/sexybacca.jpg`} size={200} round={true} /></div>
+              <div className='background-image' style={{backgroundImage: `url(${process.env.PUBLIC_URL}/img/river.jpg)`}}></div>
+              <div><Avatar src={`${process.env.PUBLIC_URL}/img/jason.jpg`} size={200} round={true} /></div>
               <h1>Jason Cochran</h1>
-              <h3>18 Year Veteran Web/Mobile Apps Developer</h3>
+              <h3>20 Year Web/Mobile Apps Developer</h3>
+              <h3 style={{ maxWidth: 480 }}>I build custom web apps using technologies such as Node.js, React, Redux, GraphQL, MongoDB among many others.</h3>
               <div style={{ marginBottom: '30px' }}>
                 <a href='https://twitter.com/app_jitsu' className='btn-icon' target='_blank'><i className='fa fa-twitter-square'></i></a>
           			<a href='https://github.com/appjitsu' className='btn-icon' target='_blank'><i className='fa fa-github-square'></i></a>
@@ -27,14 +28,23 @@ export default class Home extends Component {
             </Section>
           </ScrollableAnchor>
 
+          <ScrollableAnchor id={'projects'}>
+            <Section styles='our-work'>
+              <h3 className='title'>Most recent project: LiveActions</h3>
+              <p>I recently finished a beta for a node/react/monbodb/graphql based productivity web app for another very satisfied client. You may view that app at <a href="http://liveactions.net" target="_blank">http://liveactions.net</a>.</p>
+              <p><a href="http://liveactions.net" target="_blank"><img src={`${process.env.PUBLIC_URL}/img/portfolio/liveactions.png`} alt="LiveActions.net" /></a></p>
+              <a href='#top'>^ Back to Top</a>
+            </Section>
+          </ScrollableAnchor>
+
           <ScrollableAnchor id={'background'}>
             <Section styles='our-work'>
               <h3 className='title'>My Background</h3>
-              <p>I am a front-end or full-stack web and mobile app developer with 18 total years of experience. I am also a family man and devoted husband of 17 years, small business owner and blue belt in Brazilian JiuJitsu.</p>
+              <p>I am a full-stack web and mobile app developer with over 20 total years of experience. I am also a family man and devoted husband of 18 years and small business owner.</p>
               <p>I am very detail oriented. You can easily contact me at any hour of the day. I work very, very hard. I know how to deliver on time and on budget. I have business savvy. I work well with remote teams.</p>
-              <p>Over my 18 year career I have built quite a few web apps including an online air/car/hotel travel system, a real estate MLS app, assisted with a large oil/gas ERP system for a software company, was the lead developer on another large ERP for an oil/gas services company, helped build a college testing platform, and recently I was the lead developer on a complex lead tracking CRM/ERP web application, etc.</p>
-              <p>I am currently working on two React-Native mobile apps for different clients. The first app is an oil/gas safety auditing tool. Photos taken within the app are uploaded to Amazon S3. The second app is a social crowdfunded donations app for charities.</p>
-              <p>I also have experience with normal react, redux, meteor, firebase, node, php, rails, backbone, c# .net, etc.</p>
+              <p>Over my 20+ year career I have built quite a few web apps including an online air/car/hotel travel system, a real estate MLS app, assisted with a large oil/gas ERP system for a software company, was the lead developer on another large ERP for an oil/gas services company, helped build a college testing platform, and recently I was the lead developer on a complex lead tracking CRM/ERP web application, etc.</p>
+
+              <p>I also have experience with normal React, Redux, GraphQL, MongoDB, Meteor, Firebase, Node, PHP, Rails, Backbone, etc.</p>
               <p>I look forward to hearing more about your project. Thank you for your time.</p>
               <a href='#top'>^ Back to Top</a>
             </Section>
@@ -53,7 +63,7 @@ export default class Home extends Component {
                       <em className='title'>Freelance Web & Mobile App Developer</em>
                     </h3>
                     <h4>February 2015 - Present</h4>
-                    <p>I develop custom web and mobile solutions for my clients needs. Technologies include ES6, Meteor, React, React-Native, Redux, Firebase, MongoDB, Node, Express, etc.</p>
+                    <p>I develop custom web and mobile solutions for my clients needs. Technologies include ES6, Meteor, React, React-Native, Redux, Firebase, MongoDB, GraphQL, Node, Express, etc.</p>
                   </section>
 
                   <section className='info-section'>

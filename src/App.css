@@ -33,7 +33,7 @@ a:hover{
 	color: #fff;
 	border-radius: 4px;
 	text-transform: uppercase;
-	background-color: #2196F3;
+	background-color: rgba(228,0,0,1);
 	font-weight: 800;
 	text-align: center;
 	border: none;
@@ -138,7 +138,7 @@ header{
 	align-items: center;
 	color: #fff;
 	padding: 20px 100px 20px;
-	background-color: rgba(0,103,209,.8);
+	background-color: rgba(228,0,0,.8);
 }
 
 header h2{
