@@ -8,6 +8,7 @@ import Section from './section';
 import ContactForm from './contact-form';
 
 export default class Home extends Component {
+//<h3 style={{ maxWidth: 480 }}>I am experienced in Industrial Automation, Consulting, SQL and many others.</h3>
   render() {
     return (
       <div>
@@ -15,14 +16,14 @@ export default class Home extends Component {
         <Page>
           <ScrollableAnchor id={'top'}>
             <Section styles='hero'>
-              <div className='background-image' style={{backgroundImage: `url(${process.env.PUBLIC_URL}/img/river.jpg)`}}></div>
-              <div><Avatar src={`${process.env.PUBLIC_URL}/img/jason.jpg`} size={200} round={true} /></div>
-              <h1>Jason Cochran</h1>
-              <h3>20 Year Web/Mobile Apps Developer</h3>
-              <h3 style={{ maxWidth: 480 }}>I build custom web apps using technologies such as Node.js, React, Redux, GraphQL, MongoDB among many others.</h3>
+              <div className='background-image' style={{backgroundImage: `url(${process.env.PUBLIC_URL}/img/background2.jpg)`}}></div>
+              <div><Avatar src={`${process.env.PUBLIC_URL}/img/will.jpeg`} size={200} round={true} /></div>
+              <h1>Will Xiong</h1>
+              <h3>UBC Electrical Engineering Graduate</h3>
+              <h3 style={{ maxWidth: 480 }}>I am experienced in Industrial Automation, Consulting, SQL and many others.</h3>
               <div style={{ marginBottom: '30px' }}>
                 <a href='https://twitter.com/app_jitsu' className='btn-icon' target='_blank'><i className='fa fa-twitter-square'></i></a>
-          			<a href='https://github.com/appjitsu' className='btn-icon' target='_blank'><i className='fa fa-github-square'></i></a>
+          			<a href='https://github.com/willBear' className='btn-icon' target='_blank'><i className='fa fa-github-square'></i></a>
               </div>
               <a href='#hire-me' className='btn'>Hire Me!</a>
             </Section>
@@ -119,7 +120,7 @@ export default class Home extends Component {
 
           <ScrollableAnchor id={'hire-me'}>
             <Section styles='contact'>
-          		<h3 className='title'>Let's work together!</h3>
+          		<h3 className='title'>Lets work together!</h3>
           		<ContactForm />
               <p></p>
               <a href='#top'>^ Back to Top</a>
