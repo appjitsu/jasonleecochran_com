@@ -26,6 +26,7 @@ export default class Home extends Component {
               <div style={{ marginBottom: '30px' }}>
                 <a href='https://www.instagram.com/iftheresaweitheresawill/' className='btn-icon' target='_blank'><i className='fa fa-instagram'></i></a>
           			<a href='https://github.com/willBear' className='btn-icon' target='_blank'><i className='fa fa-github-square'></i></a>
+                <a href='https://www.linkedin.com/in/wei-xiong/' className='btn-icon' target='_blank'><i className='fa fa-linkedin-square'></i></a>
               </div>
               <a href='#hire-me' className='btn'>Hire Me!</a>
             </Section>
@@ -60,6 +61,20 @@ export default class Home extends Component {
               <div className='resume'>
                 <div className='experience'>
 
+                <h2>Projects</h2>
+                <section className='info-section'>
+                  <h3>
+                    <strong className='company'>The University of British Columbia</strong>
+                    <em className='title'>AMS Nest Wind Turbine</em>
+                  </h3>
+                  <h4>September 2017 - May 2018</h4>
+                  <p>Programmed lighting displays corresponding to the environment, time and energy generation using Arduino Uno and communication protocol focusing on i^2 c and HART communication</p>
+                  <p>Soldered various components into the PCB and verified the functionality and layout according to Altium design</p>
+                  <p>Recommended and implemented new structural design which halved the initial estimated cost and improved the overall aesthetics of the project</p>
+                  <p>Automated data pulling and test processes with SQL stored procedures and task scheduler</p>
+                  <p>Integrated lights control into PID based battery charging system and ensured overall functionality of the system</p>
+                </section>
+
                   <h2>Employment</h2>
 
                   <section className='info-section'>
@@ -86,8 +101,6 @@ export default class Home extends Component {
                     <p>Automated various patterned tasks in ladder logic by communicating with both machine operators and management, saved start up time of interlocked machines by 40% </p>
                     <p>Coordinated with plant electricians and millwrights to perform maintenance on existing machines as well as commissioning of new equipment</p>
                   </section>
-
-                  <h2>Projects</h2>
 
                 </div>
               </div>
