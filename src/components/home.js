@@ -31,8 +31,10 @@ export default class Home extends Component {
 
           <ScrollableAnchor id={'projects'}>
             <Section styles='our-work'>
-              <h3 className='title'>Most recent project: LiveActions</h3>
-              <p>I recently finished a beta for a node/react/monbodb/graphql based productivity web app for another very satisfied client. You may view that app at <a href="http://liveactions.net" target="_blank">http://liveactions.net</a>.</p>
+              <h3 className='title'>Most Recent Projects</h3>
+              <h3 className='projectName'>UBC Alma Mater Society Wind Turbine </h3>
+
+              <p>I recently took part in designing a wind power harvesting and visualisation system. This project is set to be built on the roof top of the Student Union Building (Nest) at The University of British Columbia, showcasing the feasibility of wind powered renewable energy to the student body.</p>
               <p><a href="http://liveactions.net" target="_blank"><img src={`${process.env.PUBLIC_URL}/img/portfolio/liveactions.png`} alt="LiveActions.net" /></a></p>
               <a href='#top'>^ Back to Top</a>
             </Section>

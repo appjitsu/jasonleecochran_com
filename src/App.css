@@ -102,8 +102,13 @@ section{
 section h3.title{
 	color: #414a4f;
 	text-transform: capitalize;
-	font: bold 32px 'Open Sans', sans-serif;
-	margin-bottom: 35px;
+	font: bold 40px 'Open Sans', sans-serif;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+section h3.projectName{
+	margin-bottom: 20px;
 	text-align: center;
 }
 
