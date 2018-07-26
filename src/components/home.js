@@ -6,15 +6,16 @@ import Header from './header';
 import Page from './page';
 import Section from './section';
 import ContactForm from './contact-form';
+
 import logo from '../../public/img/leftandright.gif';
 
 export default class Home extends Component {
-//<h3 style={{ maxWidth: 480 }}>I am experienced in Industrial Automation, Consulting, SQL and many others.</h3>
   render() {
     return (
       <div>
         <Header />
         <Page>
+
           <ScrollableAnchor id={'top'}>
             <Section styles='hero'>
               <div className='background-image' style={{backgroundImage: `url(${process.env.PUBLIC_URL}/img/background2.jpg)`}}></div>
@@ -32,9 +33,8 @@ export default class Home extends Component {
 
           <ScrollableAnchor id={'projects'}>
             <Section styles='our-work'>
-              <h3 className='title'>Most Recent Projects</h3>
+              <h3 className='title'>Most Recent Project</h3>
               <h3 className='projectName'>UBC Alma Mater Society Wind Turbine </h3>
-
               <p>I recently took part in designing a wind power harvesting and visualisation system. This project is set to be built on the roof top of the Student Union Building (Nest) at The University of British Columbia, showcasing the feasibility of wind powered renewable energy to the student body.</p>
               <p><a href="https://youtu.be/v6UEGVcCdLI" target = "_blank"><img src = {logo} /></a></p>
               <a href='#top'>^ Back to Top</a>
@@ -44,9 +44,9 @@ export default class Home extends Component {
           <ScrollableAnchor id={'background'}>
             <Section styles='our-work'>
               <h3 className='title'>My Background</h3>
-              <p>I am a full-stack web and mobile app developer with over 20 total years of experience. I am also a family man and devoted husband of 18 years and small business owner.</p>
-              <p>I am very detail oriented. You can easily contact me at any hour of the day. I work very, very hard. I know how to deliver on time and on budget. I have business savvy. I work well with remote teams.</p>
-              <p>Over my 20+ year career I have built quite a few web apps including an online air/car/hotel travel system, a real estate MLS app, assisted with a large oil/gas ERP system for a software company, was the lead developer on another large ERP for an oil/gas services company, helped build a college testing platform, and recently I was the lead developer on a complex lead tracking CRM/ERP web application, etc.</p>
+              <p>I am a recent electrical engineering graduate at the The University of British Columbia. I have extensive experience in industrial automation, consulting and SQL. I am also passionate about technology and self improvement.</p>
+              <p>  </p>
+              <p>Over the course of my engineering experience, I have developed and took part in designing many projects that are still being used by the school/workplace. </p>
 
               <p>I also have experience with normal React, Redux, GraphQL, MongoDB, Meteor, Firebase, Node, PHP, Rails, Backbone, etc.</p>
               <p>I look forward to hearing more about your project. Thank you for your time.</p>
@@ -59,61 +59,35 @@ export default class Home extends Component {
               <h3 className='title'>My Resume</h3>
               <div className='resume'>
                 <div className='experience'>
-                  <h2>Experience</h2>
+
+                  <h2>Employment</h2>
 
                   <section className='info-section'>
                     <h3>
-                      <strong className='company'>Self-Employed</strong>
-                      <em className='title'>Freelance Web & Mobile App Developer</em>
+                      <strong className='company'>Confirmed Automation Systems Inc</strong>
+                      <em className='title'>Controls and Equipment Design Support</em>
                     </h3>
-                    <h4>February 2015 - Present</h4>
-                    <p>I develop custom web and mobile solutions for my clients needs. Technologies include ES6, Meteor, React, React-Native, Redux, Firebase, MongoDB, GraphQL, Node, Express, etc.</p>
+                    <h4>January 2016 - August 2016</h4>
+                    <p>Tested and edited Beckhoff and Allen Bradley Programmable Logic Controllers (PLC) for the Vancouver shoring terminals and one of the largest mushroom manufacturers in the United States</p>
+                    <p>Edited the house Human-Machine Interface (HMI) linked to Beckhoff PLC, and T-SQL database in structured code and SQL stored procedures.</p>
+                    <p>Designed and built control panels using AutoCad Electrical according to industry standards</p>
+                    <p>Automated data pulling and test processes with SQL stored procedures and task scheduler</p>
+                    <p>Communicated with plant supervisors and machine operators to improve the end-user experience and edited existing PLC, HMI and SQL to their requests</p>
                   </section>
 
                   <section className='info-section'>
                     <h3>
-                      <strong className='company'>Key Energy Services</strong>
-                      <em className='title'>Web & Mobile App Developer</em>
+                      <strong className='company'>Tolko Industries</strong>
+                      <em className='title'>Control Systems Student</em>
                     </h3>
-                    <h4>May 2012 - April 2015</h4>
-                    <p>Developed large scale ERP management solutions for web and mobile using Ruby/Rails, ES6, Node, Meteor, Backbone.js and Cordova.</p>
+                    <h4>May 2015 - Dec 2015</h4>
+                    <p>Designed HMI’s with Factory Talk View on various processes within the lumber mill, replacing the outdated HMIs at the workplace, increasing throughput of machines by 10% </p>
+                    <p>Programmed, configured, and commissioned various accessories of Allen Bradley Suite PLC’s including but not limited to remote I/O, Analog I/O, Digital I/O, VFD and Photo Eyes</p>
+                    <p>Automated various patterned tasks in ladder logic by communicating with both machine operators and management, saved start up time of interlocked machines by 40% </p>
+                    <p>Coordinated with plant electricians and millwrights to perform maintenance on existing machines as well as commissioning of new equipment</p>
                   </section>
 
-                  <section className='info-section'>
-                    <h3>
-                      <strong className='company'>Warren Equipment Company</strong>
-                      <em className='title'>Web Developer</em>
-                    </h3>
-                    <h4>February 2011 - February 2012</h4>
-                    <p>Internal website development for Warren Equipment and other corporate properties.</p>
-                  </section>
-
-                  <section className='info-section'>
-                    <h3>
-                      <strong className='company'>Enertia Software</strong>
-                      <em className='title'>Web Developer</em>
-                    </h3>
-                    <h4>November 2007 - February 2011</h4>
-                    <p>ASP.NET (VB.NET) and SQL Server web developer for an oil and gas ERP software company.</p>
-                  </section>
-
-                  <section className='info-section'>
-                    <h3>
-                      <strong className='company'>Self-Employed</strong>
-                      <em className='title'>Web Application Developer & Consultant</em>
-                    </h3>
-                    <h4>January 2000 - November 2007</h4>
-                    <p>Self-Employed web application developer/consultant. Designed and developed custom websites and web applications for my clients.</p>
-                  </section>
-
-                  <section className='info-section'>
-                    <h3>
-                      <strong className='company'>OneTravel.com</strong>
-                      <em className='title'>Web Developer</em>
-                    </h3>
-                    <h4>January 1999 - January 2000</h4>
-                    <p>Developed online Air/Car/Hotel booking website and management tools using ColdFusion and SQL Server.</p>
-                  </section>
+                  <h2>Projects</h2>
 
                 </div>
               </div>
