@@ -20,9 +20,9 @@ export default class Home extends Component {
               <div><Avatar src={`${process.env.PUBLIC_URL}/img/will.jpeg`} size={200} round={true} /></div>
               <h1>Will Xiong</h1>
               <h3>UBC Electrical Engineering Graduate</h3>
-              <h3 style={{ maxWidth: 480 }}>I am experienced in Industrial Automation, Consulting, SQL and many others.</h3>
+              <h3 style={{ maxWidth: 500 }}>I am experienced in Industrial Automation, Consulting, SQL, Business Intelligence and many others.</h3>
               <div style={{ marginBottom: '30px' }}>
-                <a href='https://twitter.com/app_jitsu' className='btn-icon' target='_blank'><i className='fa fa-twitter-square'></i></a>
+                <a href='https://www.instagram.com/iftheresaweitheresawill/' className='btn-icon' target='_blank'><i className='fa fa-instagram'></i></a>
           			<a href='https://github.com/willBear' className='btn-icon' target='_blank'><i className='fa fa-github-square'></i></a>
               </div>
               <a href='#hire-me' className='btn'>Hire Me!</a>
