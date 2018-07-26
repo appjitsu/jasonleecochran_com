@@ -6,6 +6,7 @@ import Header from './header';
 import Page from './page';
 import Section from './section';
 import ContactForm from './contact-form';
+import logo from '../../public/img/leftandright.gif';
 
 export default class Home extends Component {
 //<h3 style={{ maxWidth: 480 }}>I am experienced in Industrial Automation, Consulting, SQL and many others.</h3>
@@ -35,7 +36,7 @@ export default class Home extends Component {
               <h3 className='projectName'>UBC Alma Mater Society Wind Turbine </h3>
 
               <p>I recently took part in designing a wind power harvesting and visualisation system. This project is set to be built on the roof top of the Student Union Building (Nest) at The University of British Columbia, showcasing the feasibility of wind powered renewable energy to the student body.</p>
-              <p><a href="http://liveactions.net" target="_blank"><img src={`${process.env.PUBLIC_URL}/img/portfolio/liveactions.png`} alt="LiveActions.net" /></a></p>
+              <p><a href="https://youtu.be/v6UEGVcCdLI" target = "_blank"><img src = {logo} /></a></p>
               <a href='#top'>^ Back to Top</a>
             </Section>
           </ScrollableAnchor>
