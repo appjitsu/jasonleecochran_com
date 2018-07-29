@@ -32,16 +32,6 @@ export default class Home extends Component {
             </Section>
           </ScrollableAnchor>
 
-          <ScrollableAnchor id={'projects'}>
-            <Section styles='our-work'>
-              <h3 className='title'>Most Recent Project</h3>
-              <h3 className='projectName'>UBC Alma Mater Society Wind Turbine </h3>
-              <p>I recently took part in designing a wind power harvesting and visualisation system. This project is set to be built on the roof top of the Student Union Building (Nest) at The University of British Columbia, showcasing the feasibility of wind powered renewable energy to the student body.</p>
-              <p><a href="https://youtu.be/v6UEGVcCdLI" target = "_blank"><img src = {logo} /></a></p>
-              <a href='#top'>^ Back to Top</a>
-            </Section>
-          </ScrollableAnchor>
-
           <ScrollableAnchor id={'background'}>
             <Section styles='our-work'>
               <h3 className='title'>My Background</h3>
@@ -54,11 +44,34 @@ export default class Home extends Component {
             </Section>
           </ScrollableAnchor>
 
+          <ScrollableAnchor id={'projects'}>
+            <Section styles='our-work'>
+              <h3 className='title'>Most Recent Project</h3>
+              <h3 className='projectName'>UBC Alma Mater Society Wind Turbine </h3>
+              <p>I recently took part in designing a wind power harvesting and visualisation system. This project is set to be built on the roof top of the Student Union Building (Nest) at The University of British Columbia, showcasing the feasibility of wind powered renewable energy to the student body.</p>
+              <p><a href="https://youtu.be/v6UEGVcCdLI" target = "_blank"><img src = {logo} /></a></p>
+              <a href='#top'>^ Back to Top</a>
+            </Section>
+          </ScrollableAnchor>
+
           <ScrollableAnchor id={'resume'}>
             <Section styles='resume'>
               <h3 className='title'>My Resume</h3>
               <div className='resume'>
                 <div className='experience'>
+                  <h2>Projects</h2>
+                  <section className='info-section'>
+                    <h3>
+                      <strong className='company'> The University of British Columbia</strong>
+                      <em className='title'>AMS Nest Wind Turbine</em>
+                    </h3>
+                    <h4>September 2017 - May 2018</h4>
+                    <p>Programmed lighting displays corresponding to the environment, time and energy generation using Arduino Uno and communication protocol focusing on i^2 c and HART communication</p>
+                    <p>Soldered various components into the PCB and verified the functionality and layout according to Altium design</p>
+                    <p>Recommended and implemented new structural design which halved the initial estimated cost and improved the overall aesthetics of the project</p>
+                    <p>Integrated lights control into PID based battery charging system and ensured overall functionality of the system</p>
+                    </section>
+
 
                   <h2>Employment</h2>
 
@@ -86,9 +99,6 @@ export default class Home extends Component {
                     <p>Automated various patterned tasks in ladder logic by communicating with both machine operators and management, saved start up time of interlocked machines by 40% </p>
                     <p>Coordinated with plant electricians and millwrights to perform maintenance on existing machines as well as commissioning of new equipment</p>
                   </section>
-
-                  <h2>Projects</h2>
-
                 </div>
               </div>
               <a href='#top'>^ Back to Top</a>
