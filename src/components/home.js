@@ -18,12 +18,13 @@ export default class Home extends Component {
 
           <ScrollableAnchor id={'top'}>
             <Section styles='hero'>
-              <div className='background-image' style={{backgroundImage: `url(${process.env.PUBLIC_URL}/img/background2.jpg)`}}></div>
+              <div className='background-image' style={{backgroundImage: `url(${process.env.PUBLIC_URL}/img/lake.jpg)`}}></div>
               <div><Avatar src={`${process.env.PUBLIC_URL}/img/will.jpeg`} size={200} round={true} /></div>
               <h1>Will Xiong</h1>
               <h3>UBC Electrical Engineering Graduate</h3>
               <h3 style={{ maxWidth: 500 }}>I am experienced in Industrial Automation, Consulting, SQL, Business Intelligence and many others.</h3>
               <div style={{ marginBottom: '30px' }}>
+                <a href='https://www.linkedin.com/in/wei-xiong/' className='btn-icon' target='_blank'><i className='fa fa-linkedin-square'></i></a>
                 <a href='https://www.instagram.com/iftheresaweitheresawill/' className='btn-icon' target='_blank'><i className='fa fa-instagram'></i></a>
           			<a href='https://github.com/willBear' className='btn-icon' target='_blank'><i className='fa fa-github-square'></i></a>
               </div>
@@ -44,12 +45,11 @@ export default class Home extends Component {
           <ScrollableAnchor id={'background'}>
             <Section styles='our-work'>
               <h3 className='title'>My Background</h3>
-              <p>I am a recent electrical engineering graduate at the The University of British Columbia. I have extensive experience in industrial automation, consulting and SQL. I am also passionate about technology and self improvement.</p>
-              <p>  </p>
-              <p>Over the course of my engineering experience, I have developed and took part in designing many projects that are still being used by the school/workplace. </p>
+              <p>I am a recent electrical engineering graduate at the The University of British Columbia. I have extensive experience in industrial automation, consulting and business intelligence. I am also passionate about technology and self improvement.</p>
+              <p>Over the course of my internships and university, I have designed and built numerous hardware and software projects and developed a good understanding of software design concepts. My most noted project is still being used in the 10th largest sawmill in North America, and its showcased on the companies website. I believe the combination of my skills in both design and programming will be a great asset for my future workplace. </p>
 
-              <p>I also have experience with normal React, Redux, GraphQL, MongoDB, Meteor, Firebase, Node, PHP, Rails, Backbone, etc.</p>
-              <p>I look forward to hearing more about your project. Thank you for your time.</p>
+              <p>I also have experience with React, AutoCAD Electrical, Rockwell Studios, Photoshop, VHDL, Verilog, etc.</p>
+              <p>I look forward to hearing more about your company. Thank you for your time.</p>
               <a href='#top'>^ Back to Top</a>
             </Section>
           </ScrollableAnchor>
