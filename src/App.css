@@ -1,0 +1,636 @@
+/*-------------
+ 	General
+-------------*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	font: normal 16px sans-serif;
+	color: #555;
+}
+
+ul, nav{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+
+	opacity: 0.9;
+}
+
+a:hover{
+	opacity: 1;
+}
+
+.btn {
+	color: #fff;
+	border-radius: 4px;
+	text-transform: uppercase;
+	background-color: rgba(39,77,81,.8);
+	font-weight: 800;
+	text-align: center;
+	border: none;
+	font-size: 18px;
+	font-size: 1.2rem;
+}
+
+.btn-icon {
+	border-radius: 4px;
+	text-transform: uppercase;
+	font-weight: 800;
+	text-align: center;
+	border: none;
+	font-size: 18px;
+	font-size: 3.2rem;
+	margin: 15px;
+}
+
+.small {
+	font-size: 26px;
+}
+
+nav .btn-icon {
+	border-radius: 4px;
+	text-transform: uppercase;
+	font-weight: 800;
+	text-align: center;
+	border: none;
+	font-size: 22px;
+	font-size: 1.5rem;
+	margin: 0px;
+}
+
+hr{
+	width: 150px;
+	height: 2px;
+	background-color: #275254;
+	border: 0;
+	margin-bottom: 80px;
+}
+
+section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	padding: 125px 100px;
+}
+
+@media (max-width: 1000px){
+
+	section{
+		padding: 100px 50px;
+	}
+
+}
+
+@media (max-width: 600px){
+
+	section{
+		padding: 80px 30px;
+	}
+
+}
+
+section h3.title{
+	color: #414a4f;
+	text-transform: capitalize;
+	font: bold 40px 'Open Sans', sans-serif;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+section h3.projectName{
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+section p{
+	max-width: 800px;
+	/*text-align: center;*/
+	margin-bottom: 35px;
+	padding: 0 20px;
+	line-height: 2;
+}
+
+ul.grid{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+
+/*-------------
+ 	Header
+-------------*/
+
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #fff;
+	padding: 20px 100px 20px;
+	background-color: rgba(39,82,84,.8);
+}
+
+header h2{
+	font-family: 'Quicksand', sans-serif;
+}
+
+header nav{
+	display: flex;
+	align-items: center;
+  justify-content: center;
+}
+
+header nav li{
+	margin: 0 15px;
+}
+
+header nav li:first-child{
+	margin-left: 0;
+}
+
+header nav li:last-child{
+	margin-right: 0;
+}
+
+
+
+@media (max-width: 1000px){
+	header{
+		padding: 20px 50px;
+	}
+}
+
+
+@media (max-width: 700px){
+	header{
+		flex-direction: column;
+	}
+
+	header h2{
+		margin-bottom: 15px;
+	}
+}
+
+/*-------------
+ 	Page
+-------------*/
+
+.page {
+	overflow-y: auto;
+}
+
+
+/*----------------
+ 	Hero Section
+----------------*/
+
+.hero{
+	position: relative;
+	justify-content: center;
+	min-height: 100vh;
+	color: #fff;
+	text-align: center;
+}
+
+.hero .background-image{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: 100% 100%;
+	background-color: #2196F3;
+	z-index: -1;
+}
+
+.hero .background-image:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #414a4f;
+	opacity: 0.75;
+}
+
+.hero h1{
+	font: bold 60px 'Open Sans', sans-serif;
+	margin-bottom: 15px;
+}
+
+.hero h3{
+	font: normal 28px 'Open Sans', sans-serif;
+	margin-bottom: 40px;
+}
+
+.hero a.btn{
+	padding: 20px 46px;
+}
+
+@media (max-width: 800px){
+
+	.hero{
+		min-height: 600px;
+	}
+
+	.hero h1{
+		font-size: 48px;
+	}
+
+	.hero h3{
+		font-size: 24px;
+	}
+
+	.hero a.btn{
+		padding: 15px 40px;
+	}
+
+}
+
+/*--------------------
+ 	Resume Section
+---------------------*/
+
+.resume {
+	background-color: #f9f9ef;
+}
+
+.resume .experience {
+	text-align: center;
+}
+
+.resume .experience h2 {
+  text-align: left;
+}
+
+.resume .info-section {
+	margin: 20px;
+  padding: 10px;
+  display: flex;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.resume .info-section h3 {
+	margin-bottom: 30px;
+	text-align: left;
+	width: 100%;
+}
+
+.resume .info-section h3 .company{
+	margin-right: 30px;
+}
+
+.resume .info-section h4 {
+	margin-bottom: 20px;
+	text-align: left;
+	width: 100%;
+}
+
+.resume .info-section p {
+  margin-top: 0em;
+  line-height: 1.5em;
+	text-align: left;
+	width: 100%;
+}
+
+/*--------------------
+ 	Our Work Section
+---------------------*/
+
+.оur-work{
+	background-color: #fff;
+}
+
+.our-work .grid li{
+	padding: 20px;
+	height: 350px;
+	border-radius: 3px;
+
+	background-clip: content-box;
+	background-size: cover;
+	background-position: center;
+	background-color: #333;
+}
+
+.our-work .grid li.small{
+	flex-basis: 40%;
+}
+
+.our-work .grid li.large{
+	flex-basis: 60%;
+}
+
+
+@media (max-width: 1000px){
+
+	.our-work .grid li.small,
+	.our-work .grid li.large{
+		flex-basis: 100%;
+	}
+
+}
+
+
+
+/*----------------------
+ 	Features Section
+----------------------*/
+
+.features{
+	background-color: #f7f7f7;
+}
+
+.features .grid li{
+	padding: 0 30px;
+	flex-basis: 33%;
+	text-align: center;
+}
+
+.features .grid li i{
+    font-size: 50px;
+    color: #2196F3;
+    margin-bottom: 25px;
+}
+
+.features .grid li h4{
+	color: #555;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.features .grid li p{
+    margin: 0;
+}
+
+@media (max-width: 1000px){
+
+	.features .grid li{
+		flex-basis: 70%;
+		margin-bottom: 65px;
+	}
+
+	.features .grid li:last-child{
+		margin-bottom: 0;
+	}
+
+}
+
+
+@media (max-width: 600px){
+
+	.features .grid li{
+		flex-basis: 100%;
+	}
+
+}
+
+
+
+/*--------------------
+ 	Reviews Section
+--------------------*/
+
+.reviews{
+	background-color: #fff;
+}
+
+.reviews .quote{
+	text-align: center;
+	width: 80%;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.reviews .author{
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.reviews .author:last-child{
+    margin-bottom: 0;
+}
+
+@media (max-width: 1000px){
+
+	.reviews .quote{
+		font-size: 20px;
+	}
+
+	.reviews .author{
+	    font-size: 16px;
+	}
+
+}
+
+
+
+/*---------------------
+ 	Contact Section
+---------------------*/
+
+.contact{
+	background-color: #e3f8f9;
+}
+
+.contact form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	max-width: 800px;
+	width: 80%;
+}
+
+.contact form input{
+	padding: 15px;
+	flex: 1;
+	font-size: 18px;
+	color: #555;
+	margin-bottom: 10px;
+	border: #000 solid 1px;
+	width: 100%;
+	max-width: 400px;
+}
+
+.contact form textarea{
+	padding: 15px;
+	flex: 1;
+	font-size: 18px;
+	color: #555;
+	height: 200px;
+	margin-bottom: 10px;
+	border: #000 solid 1px;
+	width: 100%;
+	max-width: 400px;
+}
+
+.contact form button{
+	padding: 18px 42px;
+}
+
+
+@media (max-width: 800px){
+
+	.contact form input{
+		flex-basis: 100%;
+		margin: 0 0 20px 0;
+	}
+
+}
+
+
+
+
+/*-------------
+ 	Footer
+-------------*/
+
+footer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	color: #ccc;
+	background-color: #fff;
+	padding: 60px 0;
+}
+
+footer ul{
+	display: flex;
+	margin-bottom: 25px;
+	font-size: 32px;
+}
+
+footer ul li{
+	margin: 0 8px;
+}
+
+footer ul li:first-child{
+	margin-left: 0;
+}
+
+footer ul li:last-child{
+	margin-right: 0;
+}
+
+footer p{
+	text-transform: uppercase;
+	font-size: 14px;
+	color: rgba(255,255,255,0.6);
+	margin-bottom: 10px;
+	color: #ccc;
+}
+
+footer p a{
+	color: #fff;
+}
+
+footer img.logos {
+  width: 100%;
+  height: auto;
+	max-width: 800px;
+}
+
+footer .copyright {
+	margin-top: 50px;
+}
+
+@media (max-width: 700px){
+
+	footer{
+		padding: 80px 15px;
+	}
+
+}
+
+
+/* -- Demo ads -- */
+
+@media (max-width: 1200px) {
+	#bsaHolder{ display:none;}
+}
+
+/* -- Github Feed -- */
+.github {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0px auto;
+}
+
+.github .entry {
+    width: 100%;
+    min-height: 50px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.github .content {
+    float: right;
+    min-height: 50px;
+    width: 90%;
+}
+
+.github .user {
+    float: left;
+    width: 8%;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.github .content .event {
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.github .content .infocontainer {
+    width: 100%;
+    font-size: 16px;
+    min-height: 24px;
+}
+
+.github .content .infocontainer .repo {
+    float: none;
+}
+
+.github .content .infocontainer .date {
+    float: none;
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    .github .content .infocontainer {
+        width: 100%;
+        font-size: 16px;
+    }
+    .github .content .infocontainer .repo {
+        float: left;
+    }
+    .github .content .infocontainer .date {
+        float: right;
+    }
+}
