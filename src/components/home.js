@@ -7,6 +7,8 @@ import Page from './page';
 import Section from './section';
 import ContactForm from './contact-form';
 
+import logo from '../../public/img/leftandright.gif';
+
 export default class Home extends Component {
   render() {
     return (
@@ -15,37 +17,38 @@ export default class Home extends Component {
         <Page>
           <ScrollableAnchor id={'top'}>
             <Section styles='hero'>
-              <div className='background-image' style={{backgroundImage: `url(${process.env.PUBLIC_URL}/img/river.jpg)`}}></div>
-              <div><Avatar src={`${process.env.PUBLIC_URL}/img/jason.jpg`} size={200} round={true} /></div>
-              <h1>Jason Cochran</h1>
-              <h3>20 Year Web/Mobile Apps Developer</h3>
-              <h3 style={{ maxWidth: 480 }}>I build custom web apps using technologies such as Node.js, React, Redux, GraphQL, MongoDB among many others.</h3>
+              <div className='background-image' style={{backgroundImage: `url(${process.env.PUBLIC_URL}/img/water.gif)`}}></div>
+              <div><Avatar src={`${process.env.PUBLIC_URL}/img/will.jpeg`} size={200} round={true} /></div>
+              <h1>Will Xiong</h1>
+              <h3>Instrumentation & Controls Engineer, EIT</h3>
+              <h3 style={{ maxWidth: 500 }}>I am experienced in Industrial Automation,Engineering Consulting, SQL, Business Intelligence and many others.</h3>
               <div style={{ marginBottom: '30px' }}>
-                <a href='https://twitter.com/app_jitsu' className='btn-icon' target='_blank'><i className='fa fa-twitter-square'></i></a>
-          			<a href='https://github.com/appjitsu' className='btn-icon' target='_blank'><i className='fa fa-github-square'></i></a>
+                <a href='https://www.linkedin.com/in/wei-xiong/' className='btn-icon' target='_blank'><i className='fa fa-linkedin-square'></i></a>
+                <a href='https://www.instagram.com/iftheresaweitheresawill/' className='btn-icon' target='_blank'><i className='fa fa-instagram'></i></a>
+          			<a href='https://github.com/willBear' className='btn-icon' target='_blank'><i className='fa fa-github-square'></i></a>
               </div>
               <a href='#hire-me' className='btn'>Hire Me!</a>
-            </Section>
-          </ScrollableAnchor>
-
-          <ScrollableAnchor id={'projects'}>
-            <Section styles='our-work'>
-              <h3 className='title'>Most recent project: LiveActions</h3>
-              <p>I recently finished a beta for a node/react/monbodb/graphql based productivity web app for another very satisfied client. You may view that app at <a href="http://liveactions.net" target="_blank">http://liveactions.net</a>.</p>
-              <p><a href="http://liveactions.net" target="_blank"><img src={`${process.env.PUBLIC_URL}/img/portfolio/liveactions.png`} alt="LiveActions.net" /></a></p>
-              <a href='#top'>^ Back to Top</a>
             </Section>
           </ScrollableAnchor>
 
           <ScrollableAnchor id={'background'}>
             <Section styles='our-work'>
               <h3 className='title'>My Background</h3>
-              <p>I am a full-stack web and mobile app developer with over 20 total years of experience. I am also a family man and devoted husband of 18 years and small business owner.</p>
-              <p>I am very detail oriented. You can easily contact me at any hour of the day. I work very, very hard. I know how to deliver on time and on budget. I have business savvy. I work well with remote teams.</p>
-              <p>Over my 20+ year career I have built quite a few web apps including an online air/car/hotel travel system, a real estate MLS app, assisted with a large oil/gas ERP system for a software company, was the lead developer on another large ERP for an oil/gas services company, helped build a college testing platform, and recently I was the lead developer on a complex lead tracking CRM/ERP web application, etc.</p>
+              <p>I am a Instrumentation and Controls Engineer working in the Oil and Gas industry. I have extensive experience in industrial automation, consulting and business intelligence. I am also passionate about technology and self improvement.</p>
+              <p>Over the course of my internships and university, I have designed and built numerous hardware and software projects and developed a good understanding of software design concepts. My most noted project is still being used in the 10th largest sawmill in North America, and its showcased on the companies website. I believe the combination of my skills in both design and programming will be a great asset for my future workplace. </p>
 
-              <p>I also have experience with normal React, Redux, GraphQL, MongoDB, Meteor, Firebase, Node, PHP, Rails, Backbone, etc.</p>
-              <p>I look forward to hearing more about your project. Thank you for your time.</p>
+              <p>I also have experience with React, AVEVA, AutoCAD Electrical, Rockwell Studios, Photoshop, VHDL, Verilog, etc.</p>
+              <p>I look forward to hearing more about your company. Thank you for your time.</p>
+              <a href='#top'>^ Back to Top</a>
+            </Section>
+          </ScrollableAnchor>
+
+          <ScrollableAnchor id={'projects'}>
+            <Section styles='our-work'>
+              <h3 className='title'>Most Recent Project</h3>
+              <h3 className='projectName'>UBC Alma Mater Society Wind Turbine </h3>
+              <p>I recently took part in designing a wind power harvesting and visualisation system. This project is set to be built on the roof top of the Student Union Building (Nest) at The University of British Columbia, showcasing the feasibility of wind powered renewable energy to the student body.</p>
+              <p><a href="https://youtu.be/v6UEGVcCdLI" target = "_blank"><img src = {logo} /></a></p>
               <a href='#top'>^ Back to Top</a>
             </Section>
           </ScrollableAnchor>
@@ -55,62 +58,56 @@ export default class Home extends Component {
               <h3 className='title'>My Resume</h3>
               <div className='resume'>
                 <div className='experience'>
-                  <h2>Experience</h2>
-
+                  <h2>Projects</h2>
                   <section className='info-section'>
                     <h3>
-                      <strong className='company'>Self-Employed</strong>
-                      <em className='title'>Freelance Web & Mobile App Developer</em>
+                      <strong className='company'> The University of British Columbia</strong>
+                      <em className='title'>AMS Nest Wind Turbine</em>
                     </h3>
-                    <h4>February 2015 - Present</h4>
-                    <p>I develop custom web and mobile solutions for my clients needs. Technologies include ES6, Meteor, React, React-Native, Redux, Firebase, MongoDB, GraphQL, Node, Express, etc.</p>
+                    <h4>September 2017 - May 2018</h4>
+                    <p>Programmed lighting displays corresponding to the environment, time and energy generation using Arduino Uno and communication protocol focusing on i^2 c and HART communication</p>
+                    <p>Soldered various components into the PCB and verified the functionality and layout according to Altium design</p>
+                    <p>Recommended and implemented new structural design which halved the initial estimated cost and improved the overall aesthetics of the project</p>
+                    <p>Integrated lights control into PID based battery charging system and ensured overall functionality of the system</p>
+                    </section>
+
+
+                  <h2>Employment</h2>
+                  <section className='info-section'>
+                    <h3>
+                      <strong className='company'>Solaris Management Consultants</strong>
+                      <em className='title'>Instrumentation & Controls Engineer, EIT</em>
+                    </h3>
+                    <h4>January 2019 - Present</h4>
+                    <p>Developed instrument index, datasheets and specifications and assisted in the development of piping and instrumentation diagrams (P&ID)</p>
+                    <p>Designed workflow scripts and assisted in the development in house AVEVA equivalent software</p>
+                    <p>Liaise between project manager and technical disciplines in the design of natural gas gathering system</p>
                   </section>
 
                   <section className='info-section'>
                     <h3>
-                      <strong className='company'>Key Energy Services</strong>
-                      <em className='title'>Web & Mobile App Developer</em>
+                      <strong className='company'>Confirmed Automation Systems Inc</strong>
+                      <em className='title'>Controls and Equipment Design Support</em>
                     </h3>
-                    <h4>May 2012 - April 2015</h4>
-                    <p>Developed large scale ERP management solutions for web and mobile using Ruby/Rails, ES6, Node, Meteor, Backbone.js and Cordova.</p>
+                    <h4>January 2016 - August 2016</h4>
+                    <p>Tested and edited Beckhoff and Allen Bradley Programmable Logic Controllers (PLC) for the Vancouver shoring terminals and one of the largest mushroom manufacturers in the United States</p>
+                    <p>Edited the house Human-Machine Interface (HMI) linked to Beckhoff PLC, and T-SQL database in structured code and SQL stored procedures.</p>
+                    <p>Designed and built control panels using AutoCad Electrical according to industry standards</p>
+                    <p>Automated data pulling and test processes with SQL stored procedures and task scheduler</p>
+                    <p>Communicated with plant supervisors and machine operators to improve the end-user experience and edited existing PLC, HMI and SQL to their requests</p>
                   </section>
 
                   <section className='info-section'>
                     <h3>
-                      <strong className='company'>Warren Equipment Company</strong>
-                      <em className='title'>Web Developer</em>
+                      <strong className='company'>Tolko Industries</strong>
+                      <em className='title'>Control Systems Student</em>
                     </h3>
-                    <h4>February 2011 - February 2012</h4>
-                    <p>Internal website development for Warren Equipment and other corporate properties.</p>
+                    <h4>May 2015 - Dec 2015</h4>
+                    <p>Designed HMI’s with Factory Talk View on various processes within the lumber mill, replacing the outdated HMIs at the workplace, increasing throughput of machines by 10% </p>
+                    <p>Programmed, configured, and commissioned various accessories of Allen Bradley Suite PLC’s including but not limited to remote I/O, Analog I/O, Digital I/O, VFD and Photo Eyes</p>
+                    <p>Automated various patterned tasks in ladder logic by communicating with both machine operators and management, saved start up time of interlocked machines by 40% </p>
+                    <p>Coordinated with plant electricians and millwrights to perform maintenance on existing machines as well as commissioning of new equipment</p>
                   </section>
-
-                  <section className='info-section'>
-                    <h3>
-                      <strong className='company'>Enertia Software</strong>
-                      <em className='title'>Web Developer</em>
-                    </h3>
-                    <h4>November 2007 - February 2011</h4>
-                    <p>ASP.NET (VB.NET) and SQL Server web developer for an oil and gas ERP software company.</p>
-                  </section>
-
-                  <section className='info-section'>
-                    <h3>
-                      <strong className='company'>Self-Employed</strong>
-                      <em className='title'>Web Application Developer & Consultant</em>
-                    </h3>
-                    <h4>January 2000 - November 2007</h4>
-                    <p>Self-Employed web application developer/consultant. Designed and developed custom websites and web applications for my clients.</p>
-                  </section>
-
-                  <section className='info-section'>
-                    <h3>
-                      <strong className='company'>OneTravel.com</strong>
-                      <em className='title'>Web Developer</em>
-                    </h3>
-                    <h4>January 1999 - January 2000</h4>
-                    <p>Developed online Air/Car/Hotel booking website and management tools using ColdFusion and SQL Server.</p>
-                  </section>
-
                 </div>
               </div>
               <a href='#top'>^ Back to Top</a>
@@ -119,7 +116,7 @@ export default class Home extends Component {
 
           <ScrollableAnchor id={'hire-me'}>
             <Section styles='contact'>
-          		<h3 className='title'>Let's work together!</h3>
+          		<h3 className='title'>Lets work together!</h3>
           		<ContactForm />
               <p></p>
               <a href='#top'>^ Back to Top</a>

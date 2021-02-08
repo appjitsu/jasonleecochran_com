@@ -44,7 +44,7 @@ export default class ContactForm extends Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit} action="https://formspree.io/jlcochran2013@gmail.com" method="POST">
+      <form onSubmit={this.handleSubmit} action="https://formspree.io/will_xiong@hotmail.com" method="POST">
         <input type='text' name='name' placeholder='Name' value={this.state.name} onChange={this.handleChange} />
         <input type='text' name='company' placeholder='Company' value={this.state.company} onChange={this.handleChange} />
         <input type='text' name='_replyto' placeholder='Email' value={this.state.email} onChange={this.handleChange} />
